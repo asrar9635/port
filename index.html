@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asrar Ahmed - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .project-modal img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Asrar Ahmed</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Asrar Ahmed</h1>
+            <p class="lead">Python Developer | BCA Graduate</p>
+            <a href="#projects" class="btn btn-light mt-3">View My Projects</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500" alt="Profile Picture" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <p>Hello! I’m Asrar Ahmed, a Python developer with expertise in building web applications, data analysis, and automation scripts. I hold a Bachelor’s degree in Computer Applications (BCA) and am dedicated to continuous learning and growth in the tech world.</p>
+                    <p>My passion lies in solving complex problems and creating innovative solutions to improve user experiences.</p>
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Technical Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fa-solid fa-code fa-3x mb-3 text-primary"></i>
+                    <h5>Languages</h5>
+                    <p>Python, JavaScript, HTML, CSS</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-layer-group fa-3x mb-3 text-primary"></i>
+                    <h5>Frameworks</h5>
+                    <p>Flask, Django, Pandas, NumPy</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-database fa-3x mb-3 text-primary"></i>
+                    <h5>Tools</h5>
+                    <p>Git, Docker, VS Code, MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Brief summary of the project goes here.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Brief summary of the project goes here.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Brief summary of the project goes here.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1Label">Project 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/700" alt="Project 1 Image" class="project-modal">
+                    <p>Detailed description of Project 1 goes here. Explain the technologies used, challenges faced, and solutions implemented.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add modals for Project 2 and Project 3 similarly -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact</h2>
+            <form>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="my-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Asrar Ahmed. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
